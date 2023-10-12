@@ -160,7 +160,7 @@
                                     </div>
                                     <div class="col-md-7">
                                        <div class="banner_img">
-                                          <figure><img class="img_responsive" src="images/20230408_095012.jpg"></figure>
+                                          <figure><img class="img_responsive width-adjust" src="images/20230408_095012.jpg"></figure>
                                        </div>
                                     </div>
                                  </div>
@@ -327,7 +327,7 @@
                </div>
                <div class="col-md-4">
                   <div class="skating-box">
-                     <figure><img src="images/sakt3.png" alt="#"/></figure>
+                     <figure><video src="https://www.instagram.com/p/CyQSNDFLlnO/" alt="#"></video></figure>
                      <div class="link_btn">
                         <a class="read_more" href="Javascript:void(0)">See More</a>
                      </div>
@@ -564,7 +564,7 @@
             </div>
          </div>
       </footer>
-      <!-- end footer -->
+      <-- end footer -->
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/bootstrap.bundle.min.js"></script>
@@ -606,7 +606,8 @@ var swiper1 = new Swiper('.client-swiper', {
   }
 });
 // Initialize Testimonial Swiper
-var swiper2 = new Swiper('.testimonial-swiper', {
+setInterval(() => {
+   var swiper2 = new Swiper('.testimonial-swiper', {
   slidesPerView: 3,
   pagination: '.swiper-pagination',
   paginationClickable: true,
@@ -631,13 +632,14 @@ var swiper2 = new Swiper('.testimonial-swiper', {
     }
   }
 });
+}, 1000)
 </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
 <script>
 // Counterup
 $('.counter').counterUp({
-  time: 1000
+  time: 5000
 });
 
 // Main Navigation
@@ -645,18 +647,13 @@ $('#menu-toggle').click(function(){
   $(this).toggleClass('open'),
   $('.main-nav').toggleClass('show-it');
 })
-</script>
+// setInterval(() => {
+//    $('#menu-toggle').toggleClass('open'),
+//   $('.main-nav').toggleClass('show-it');
+// }, 1000)
+// </script>
 
 <!-- Google Analytics - You should remove this -->
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-29231762-2', 'auto');
-ga('send', 'pageview');
-
-</script>
    </body>
 </html>

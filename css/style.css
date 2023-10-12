@@ -602,6 +602,10 @@ ul.email li i {
      background: #3e0bce;
 }
 
+.width-adjust{
+     height: 750px;
+}
+
 
 /** end about section **/
 
@@ -1232,6 +1236,7 @@ ul.social_icon li a:hover {
      -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
      transition: all 0.2s;
+     color: white;
    }
    .swiper-button-next:hover,
    .swiper-button-prev:hover {
