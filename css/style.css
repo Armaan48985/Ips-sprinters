@@ -236,12 +236,66 @@ button {
      flex-wrap: wrap;
 }
 
+#firstvideo{
+     width: 50rem;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: 70%;
+     z-index: 99999;
+     display: none;
+}
+#secondvideo{
+     width: 50rem;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: -30%;
+     z-index: 99999;
+     display: none;
+}
+#thirdvideo{
+     width: 50rem;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     left: -120%;
+     z-index: 99999;
+     display: none;
+}
+
+#overlay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: black;
+     opacity: .6;
+     display: none;
+     z-index: 999;
+     top: 0;
+     left: 0;
+}
+
+#close-icon{
+     position: absolute;
+     top: 4rem;
+     left: 75rem;
+     font-size: 8rem;
+     color: white;
+     /* background-color: red; */
+     /* width: 300px; */
+     z-index: 9999999;
+     cursor: pointer;
+     -webkit-filter: invert();
+     display: none;
+}
+
 .read_more {
      font-size: 17px;
      text-transform: uppercase;
      transition: ease-in all 0.5s;
      font-weight: bold;
-     color: #2b2b2b;
+     color: #ff6060;
      z-index: 999;
      position: relative;
 }
@@ -334,9 +388,10 @@ button {
 width: 100%;
 background:#fff0;
 height: 107px;
-padding: 27px 30px;
+padding: 10px 30px;
 position: absolute;
 z-index: 999;
+/* margin-bottom: 2rem; */
 }
 
 .navigation.navbar {
@@ -398,6 +453,15 @@ ul.email li i {
 }
 
 
+.logo{
+     width: 320px;
+     height: 130px;
+     margin-left: 2rem;
+     margin-top: 30px;
+     /* box-shadow: 1px 0 3px rgb(99, 99, 9)*/
+     /* border-bottom: 1px solid rgb(97, 97, 97); */
+}
+
 /** end header **/
 
 
@@ -408,7 +472,7 @@ ul.email li i {
 }
 
 .slider_main {
-     padding-top: 6%;
+     padding-top: 10%;
 }
 
 .relative {
@@ -554,12 +618,13 @@ ul.email li i {
 /** about section **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     background: rgb(47, 47, 47);
      background-size: cover;
      background-position: center center;
      background-repeat: no-repeat;
      background-attachment: fixed;
-     padding-top: 90px;
+     padding-top: 30px;
+     padding-bottom: 30px;
 }
 
 .about .titlepage {
@@ -583,23 +648,23 @@ ul.email li i {
 
 .about_img figure {
      margin: 0;
-     width: 500px;
-     height: 800px;
+
 }
 
 .about_img figure img {
-     width: 100%;
-     margin-bottom: -11px;
+     width: 600px;
+     margin-bottom: 0;
+     height: 800px;
 }
 
 .about .read_more {
      color: #fff;
-     background: #3e0bce;
+     /* background: #3e0bce; */
 }
 
 .about .read_more:hover {
      color: #f0390f;
-     background: #3e0bce;
+     /* background: #3e0bce; */
 }
 
 .width-adjust{
@@ -615,6 +680,7 @@ ul.email li i {
 .skating {
      background: #fff;
      padding: 90px 30px 90px 30px;
+     position: relative;
 }
 
 .skating .titlepage p {
@@ -645,6 +711,8 @@ ul.email li i {
 
 .shop {
      background: #fff;
+     margin-top: 5rem;
+     margin-bottom: 10rem;
 }
 
 .shop .titlepage {
@@ -667,7 +735,10 @@ ul.email li i {
 }
 
 .shop_img {
-     padding-left: 40px;
+     padding-left: 100px;
+     padding-right: 100px;
+     /* width: 200px; */
+     width: 100%;
 }
 
 .shop_img figure {
