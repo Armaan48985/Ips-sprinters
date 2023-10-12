@@ -443,7 +443,7 @@ ul.email li i {
 .relative h3 {
      padding-top: 60px;
      font-size: 70px;
-     line-height: 85px;
+     line-height: 80px;
      color: #2b2b2b;
      font-weight: bold;
      padding-bottom: 60px;
@@ -583,6 +583,8 @@ ul.email li i {
 
 .about_img figure {
      margin: 0;
+     width: 500px;
+     height: 800px;
 }
 
 .about_img figure img {
@@ -1140,6 +1142,7 @@ ul.social_icon li a:hover {
      background-color: #fff;
      box-shadow: 0 0 100px rgba(0, 0, 0, 0.15);
      text-align: center;
+     margin-top: 12rem;
    }
    h4.sub-heading {
      text-transform: uppercase;
