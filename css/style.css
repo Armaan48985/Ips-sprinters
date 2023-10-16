@@ -241,7 +241,7 @@ button {
      width: 50rem;
      height: 35rem;
      position: absolute;
-     top: -60%;
+     top: 0;
      left: 85%;
      z-index: 99999;
      display: none;
@@ -250,7 +250,7 @@ button {
      width: 50rem;
      height: 35rem;
      position: absolute;
-     top: -60%;
+     top: 0;
      left: -15%;
      z-index: 99999;
      display: none;
@@ -259,7 +259,7 @@ button {
      width: 50rem;
      height: 35rem;
      position: absolute;
-     top: -60%;
+     top: 0;
      left: -105%;
      z-index: 99999;
      display: none;
@@ -270,7 +270,7 @@ button {
      width: 100%;
      height: 100%;
      background: black;
-     opacity: .6;
+     opacity: .7;
      display: none;
      z-index: 999;
      top: 0;
@@ -279,8 +279,8 @@ button {
 
 #close-icon{
      position: absolute;
-     top: 4rem;
-     left: 75rem;
+     top: 14rem;
+     left: 83rem;
      /* font-size: 8rem; */
      color: white;
      /* background-color: red; */
@@ -353,6 +353,19 @@ button {
      max-width: 100%;
 }
 
+.nav-change{
+     display: flex;
+     justify-content: space-between;
+     /* box-shadow: 1px 1px black; */
+     /* border-bottom: 1px solid rgb(215, 215, 215); */
+     margin-top: 0;
+     padding-top: 0;
+     width: 100%;
+     margin-left: 0;
+     margin-right: 0;
+     padding-bottom: 0;
+}
+
 
 /**-- heading section --**/
 
@@ -395,9 +408,21 @@ z-index: 999;
 /* margin-bottom: 2rem; */
 }
 
+.big-width{
+     /* width: 1000px; */
+     /* margin-left: 20rem; */
+}
+
 .navigation.navbar {
      float: right;
      padding: 0;
+     /* margin-left: 100rem; */
+     margin-right: 0;
+}
+
+.collapse{  
+     width: 800px;
+     margin-left: 100rem;
 }
 
 .navigation.navbar-dark .navbar-nav .nav-link {
@@ -511,7 +536,7 @@ ul.email li i {
      line-height: 80px;
      color: #2b2b2b;
      font-weight: bold;
-     padding-bottom: 60px;
+     padding-bottom: 30px;
 }
 
 .carousel .icon-container {
@@ -572,6 +597,11 @@ ul.email li i {
 
 .class {
      padding: 140px 0px 60px 0px;
+}
+
+#firstimg{
+     height: 500px;
+     width: 500px;
 }
 
 .class .titlepage p {
@@ -669,7 +699,9 @@ ul.email li i {
 }
 
 .width-adjust{
-     height: 750px;
+     width: 900px;
+     height: 650px;
+     margin-top: 4rem;
 }
 
 
@@ -907,13 +939,23 @@ ul.email li i {
 
 /** end testimonial **/
 
+.banner_img img{
+     border-radius: 5px;
+}
+
+/* .social-icon li{
+     background-color: orange;
+} */
 
 /** footer **/
 
 .footer {
-     padding-top: 120px;
+     margin-top: 100px;
+     padding-top: 90px;
      background: #fff;
      text-align: center;
+     /* border-top: 1px solid rgb(189, 189, 189); */
+     box-shadow: 1px 0 2px rgb(161, 161, 161);
 }
 
 .border_left {
@@ -1045,6 +1087,7 @@ ul.fullink li:nth-child(5) {
 ul.social_icon {
      float: left;
      padding-top: 0px;
+     /* margin-left: 10px; */
 }
 
 ul.social_icon li {
@@ -1053,7 +1096,7 @@ ul.social_icon li {
 }
 
 ul.social_icon li a {
-     background: #343334;
+     background: #f0390f;
      width: 33px;
      height: 33px;
      display: flex;
@@ -1061,6 +1104,7 @@ ul.social_icon li a {
      justify-content: center;
      color: #fff;
      border-radius: 30px;
+     margin-right: 15px;
 }
 
 ul.social_icon li a i {
@@ -1269,12 +1313,18 @@ ul.social_icon li a:hover {
    h1.heading.pink:after {
      background-color: #ff2a75;
    }
+
+   .client-logo1{
+     width: 170px;
+     -webkit-filter: invert();
+   }
    
    
    .swiper-container {
      width: 100%;
      height: 100%;
      padding: 4em 1em;
+     margin-top: 1rem;
    }
    .swiper-slide {
      font-size: 18px;
@@ -1291,6 +1341,10 @@ ul.social_icon li a:hover {
      -webkit-transition: all 0.2s;
      -moz-transition: all 0.2s;
      transition: all 0.2s;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
    }
    .client-box .client-logo {
      max-height: 120px;
